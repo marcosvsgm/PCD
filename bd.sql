@@ -1,0 +1,21 @@
+CREATE SCHEMA PCD ;
+CREATE TABLE ALUNO
+(
+matricula INT NOT NULL,
+Nome VARCHAR( 45 ) NOT NULL,
+nome_res VARCHAR( 45 ) NOT NULL,
+Datanasc to DATE NOT NULL,
+endereco VARCHAR( 45 ) NOT NULL,
+Cpf VARCHAR( 45 ) NOT NULL,
+cll VARCHAR( 45 ) NOT NULL,
+telefone VARCHAR( 45 ) NOT NULL,
+cep VARCHAR( 45 ) NOT NULL,
+sexo VARCHAR( 45 ) NOT NULL,
+tipodef VARCHAR( 45 ) NOT NULL,
+remedio VARCHAR( 45 ) NOT NULL,
+CCodigo INT NOT NULL,
+PRIMARY KEY (matricula ) ,
+FOREIGN KEY ( CCodigo ) REFERENCES TRUMA( codigo )
+) ;
+
+

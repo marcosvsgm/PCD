@@ -55,7 +55,6 @@
                     </div>
                     <div class="ms-3">
                         <h6 class="mb-0">Marcos Souza
-                            
                         </h6>
                         <span>Admin</span>
                     </div>
@@ -66,7 +65,6 @@
                     <a href="estoque.php" class="nav-item nav-link active"><i class="fa fa-keyboard me-2"></i>Estoque</a>
                     <a href="cadasAluno.php" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Casdatro de Alunos</a>
                     <a href="cadasProfe.php" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Casdatro de Professores</a>
-                    
                 </div>
             </nav>
         </div>
