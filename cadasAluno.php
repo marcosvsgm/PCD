@@ -1,3 +1,21 @@
+<?php
+if (insert($_POST['submit']))
+include_once '../conexao/conexao.php';
+  
+    $Nome = $_POST ['$Nome'];
+    $NomedoResponsavel = $_POST ['$NomedoResponsavel'];
+    $DatadeNascimento = $_POST ['$DatadeNascimento'];
+    $Endereco = $_POST ['$Endereco'];
+    $CPF = $_POST ['$CPF'];
+    $Celular = $_POST ['$Celular'];
+    $Telefone = $_POST ['$Telefone'];
+    $cep = $_POST ['$cep'];
+    $sexo = $_POST ['$sexo'];
+    $Tipodedeficiência = $_POST ['$Tipodedeficiência'];
+    $Remédio = $_POST ['$Remédio'];
+    $result = mysqli_query(conexao,"INSERT INTO ususario( Nome,NomedoResponsavel,DatadeNascimento,Endereco,CPF,Celular,Telefone,cep,sexo,Tipodedeficiência,Remédio)");
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -172,7 +190,7 @@
                                 <div class="row mb-3">
                                     <label for="inputNome" class="col-sm-2 col-form-label">Nome</label>
                                     <div class="col-sm-10">
-                                        <input type="nome" class="form-control" id="inputNome">
+                                        <input type="nome"name=""class="form-control" id="inputNome">
                                     </div>
                                 </div>
                                 <div class="row mb-3">

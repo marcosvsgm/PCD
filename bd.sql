@@ -19,3 +19,51 @@ FOREIGN KEY ( CCodigo ) REFERENCES TRUMA( codigo )
 ) ;
 
 
+import sqlite3
+
+banco = sqlite3.connect('primeiro_banco.bd')
+
+cursor = banco.cursor()
+
+#curso.execute("CREATE TABLE pessoas (nome text, idade integer, emeil text")
+
+#cursos.execute("INSERT INTO pessoas VALUES('Marcos', 40,'marcos_302@gmail.com')")
+
+#banco.comit ()
+curso.execute("SELECT *FROM pessoas")
+print(cursor.fetchall())
+
+import sqlite3
+
+try:
+
+    banco = sqlite3.connect('pirmiero_banco.db') #objeto de conexao com o banco 
+
+    cursor = banco.cursor()
+
+    cursor.execute("DELETE from pessoas WHERE idade = 20")
+
+    banco.comit()
+    banco.close()
+    print("os dados foram removidos com sucesso!!")
+
+except sqlite3.Erro as erro
+
+import sqlite3
+
+nome = "Czar"
+idade = 17
+email = "Czar@gamil.com"
+
+banco = sqlite3.connect('primeiro_banco.db') #objeto de conexao com o banco
+
+cursor = banco.cursor()
+
+#cursor.execute("CREATE TABLE pessoas (nome text,idade integer, email text)")
+
+#cursos.execute("INSERT INTO pessoas VALUES('"+nome+"',"+str(idade)+",'"+email+"')")
+
+cursor.execute("UPDATE pessoas SET nome = 'Marcos' WHERE idade = 21")
+
+
+banco.comit ()
