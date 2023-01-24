@@ -18,7 +18,6 @@ PRIMARY KEY (matricula ) ,
 FOREIGN KEY ( CCodigo ) REFERENCES TRUMA( codigo )
 ) ;
 
-
 import sqlite3
 
 banco = sqlite3.connect('primeiro_banco.bd')
